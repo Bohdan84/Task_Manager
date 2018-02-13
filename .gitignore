@@ -12,8 +12,11 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+/db/*.postresql
 
 /node_modules
 /yarn-error.log
 
 .byebug_history
+
+.gitignore
