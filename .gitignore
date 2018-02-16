@@ -20,3 +20,6 @@
 .byebug_history
 
 .gitignore
+test/controllers/projects_controller_test.rb
+test/controllers/tasks_controller_test.rb
+.gitignore
