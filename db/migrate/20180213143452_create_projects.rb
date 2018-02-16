@@ -5,5 +5,6 @@ class CreateProjects < ActiveRecord::Migration[5.1]
     	t.integer :id_task 
       t.timestamps
     end
+    add_index :projects, :name
   end
 end

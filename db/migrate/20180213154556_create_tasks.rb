@@ -8,5 +8,6 @@ class CreateTasks < ActiveRecord::Migration[5.1]
     	t.boolean  :done
       t.timestamps
     end
+    add_index :tasks, :name
   end
 end

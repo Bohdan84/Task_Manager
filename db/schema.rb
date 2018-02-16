@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20180213154556) do
     t.integer "id_task"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_projects_on_name"
   end
 
   create_table "tasks", force: :cascade do |t|
@@ -30,6 +31,7 @@ ActiveRecord::Schema.define(version: 20180213154556) do
     t.boolean "done"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_tasks_on_name"
   end
 
 end
