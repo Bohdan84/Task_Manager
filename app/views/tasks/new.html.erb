@@ -1,0 +1,10 @@
+<h1> Create new task </h1>
+
+<%= form_for Task.new do |t| %>
+	
+	<p> Name: <% t.text_field :name %> </p>
+	<p> Description: <% t.text_field :description %> </p>
+	<p> Deadline: <% t.text_field :deadline %> </p>
+	<input type="checkbox" name="priority" value="a2"> priority <Br>
+	
+<% end %>
